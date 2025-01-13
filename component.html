@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Projet TailwindCSS</title>
+  <link href="./dist/output.css" rel="stylesheet">
+</head>
+<header class="fixed mt-[-2px] flex justify-between items-center w-full h-[75px] bg-black">
+    <h1 class="text-2xl text-white font-bold p-2">Melwin Duquenne</h1>
+<div class="flex items-center">
+    <nav class=" md:flex hidden">
+    <a class="px-4 py-2 text-white mr-2" href="#">About</a>
+    <a class="px-4 py-2 text-white mr-2" href="#">experience</a>
+    <a class="px-4 py-2 text-white mr-2" href="#">Projects</a>
+    <button id="openModalButton" class="px-4 py-2 text-white mr-2">Contact</button>
+    <a href="#"><img class="w-10 h-10 p-2" src="https://img.icons8.com/?size=100&id=32309&format=png&color=ffffff"/></a>
+    <a href="#"><img class="w-10 h-10 p-2" src="https://img.icons8.com/?size=100&id=12599&format=png&color=ffffff"/></a>
+    </nav>
+    <nav class="flex mr-2 md:hidden ">
+       <button id="burger-menu"> <img class="w-6 h-6" src="https://img.icons8.com/?size=100&id=120374&format=png&color=ffffff"/></button>    
+    </nav>
+    <div id="menu" class="hidden md:block absolute top-[75px] left-0 w-full bg-black md:relative md:top-0 md:w-auto md:hidden">
+        <ul class="flex flex-col md:flex-row md:space-x-4 text-white">
+            <li><a class="px-4 py-2 block hover:bg-gray-700" href="#">About</a></li>
+            <li><a class="px-4 py-2 block hover:bg-gray-700" href="#">Experience</a></li>
+            <li><a class="px-4 py-2 block hover:bg-gray-700" href="#">Projects</a></li>
+            <li><a class="px-4 py-2 block hover:bg-gray-700" href="#">Contact</a></li>
+            <div class="flex justify-end w-full">
+                <img class="w-10 h-10 p-2" src="https://img.icons8.com/?size=100&id=32309&format=png&color=ffffff"/>
+                <img class="w-10 h-10 p-2" src="https://img.icons8.com/?size=100&id=12599&format=png&color=ffffff"/>
+            </div>
+        </ul>
+    </div>
+</div>
+</header>
+
+
+<body class="bg-black p-0.5">
+    <canvas id="bgCanvas"></canvas>
+    <div class="mt-28 ">
+        <div class="text-white font-bold text-2xl flex flex-col justify-center items-center md:flex-row">
+            <img class=" w-5/6 md:w-1/2 p-4" src="https://placehold.co/600x400?text=replace"/>
+            <div class=" w-5/6 md:w-1/2 p-4">
+                <div class="md:flex "><p class=" flex items-end pr-2">Salut, moi c’est</p><h2 class="text-3xl text-white"> Melwin Duquenne</h2></div><p class="text-justify">développeur enthousiaste ! J’aime créer des projets qui déchirent,
+                    avec du code bien propre et une expérience utilisateur au top.
+                </p>
+            </div>
+        </div>
+        <div class="flex justify-center p-2">
+            <hr class="w-1/2">
+        </div>
+        <div class="w-full flex flex-col items-center md:flex-row ">
+            <p class="text-white p-4 text-xl font-bold w-full md:w-1/2">
+                Actuellement, je prépare un Master en Ingénierie Web à l'ESGI d'Aix-en-Provence, en alternance chez Bestpok. Auparavant, j'ai obtenu une Licence en Développement d'Applications Web chez RI7, également en alternance, au sein de l'entreprise Atechsys.
+                Passionné par le développement web, j'apprécie autant la partie backend que frontend. L'aspect design m'intéresse également énormément, et j'aime explorer des solutions créatives et fonctionnelles.
+            </p>
+            <img class=" w-5/6 md:w-1/2 p-4" src="https://placehold.co/600x400?text=replace"/>
+        </div>
+        <div class="flex justify-center p-2">
+            <hr class="w-1/2">
+        </div>
+        <div class="w-full flex flex-col items-center justify-center">
+            <h2 class="text-2xl text-white font-bold text-center p-4">COMPETENCE</h2>
+            <p class="text-white text-xl w-1/2 text-center">Elles sont en constante évolution, car ce métier permet d'apprendre chaque jour, surtout quand on est impliqué, curieux et passionné</p>
+            <div class="flex p-4 w-full">
+                <div class="w-1/2 p-8 mx-auto">
+                    <!-- BACK-END Section -->
+                    <div class="mb-6">
+                      <h2 class="text-xl text-white font-bold mb-4">BACK-END</h2>
+                      <div class="space-y-3">
+                        <div>
+                          <label class="block text-white font-medium">PHP</label>
+                          <div class="h-2 bg-gray-200 rounded-full">
+                            <div class="h-full bg-blue-600 rounded-full progress-bar" data-width="90%"></div>
+                          </div>
+                        </div>
+                        <div>
+                          <label class="block text-white font-medium">SQL</label>
+                          <div class="h-2 bg-gray-200 rounded-full">
+                            <div class="h-full bg-blue-600 rounded-full progress-bar" data-width="80%"></div>
+                          </div>
+                        </div>
+                        <div>
+                            <label class="block text-white font-medium">Mysql</label>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                              <div class="h-full bg-blue-600 rounded-full progress-bar" data-width="85%"></div>
+                            </div>
+                          </div>
+                        <div>
+                          <label class="block text-white font-medium">Symfony</label>
+                          <div class="h-2 bg-gray-200 rounded-full">
+                            <div class="h-full bg-blue-600 rounded-full progress-bar" data-width="70%"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                
+                    <!-- FRONT-END Section -->
+                    <div class="mb-6">
+                      <h2 class="text-xl text-white font-bold mb-4">FRONT-END</h2>
+                      <div class="space-y-3">
+                        <div>
+                          <label class="block text-white font-medium">HTML</label>
+                          <div class="h-2 bg-gray-200 rounded-full">
+                            <div class="h-full bg-blue-600 rounded-full progress-bar" data-width="95%"></div>
+                          </div>
+                        </div>
+                        <div>
+                          <label class="block text-white font-medium">CSS</label>
+                          <div class="h-2 bg-gray-200 rounded-full">
+                            <div class="h-full bg-blue-600 rounded-full progress-bar" data-width="85%"></div>
+                          </div>
+                        </div>
+                        <div>
+                            <label class="block text-white font-medium">TailwindCSS</label>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                              <div class="h-full bg-blue-600 rounded-full progress-bar" data-width="85%"></div>
+                            </div>
+                          </div>
+                        <div>
+                          <label class="block text-white font-medium">JavaScript</label>
+                          <div class="h-2 bg-gray-200 rounded-full">
+                            <div class="h-full bg-blue-600 rounded-full progress-bar" data-width="75%"></div>
+                          </div>
+                        </div>
+                        <div>
+                            <label class="block text-white font-medium">React</label>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                              <div class="h-full bg-blue-600 rounded-full progress-bar" data-width="70%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-white font-medium">Three.js</label>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                              <div class="h-full bg-blue-600 rounded-full progress-bar" data-width="60%"></div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                
+                    <!-- DISIGN Section -->
+                    <div class="mb-6">
+                        <h2 class="text-xl text-white font-bold mb-4">DISIGN</h2>
+                        <div class="space-y-3">
+                          <div>
+                            <label class="block text-white font-medium">Kritas</label>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                              <div class="h-full bg-blue-600 rounded-full progress-bar" data-width="75%"></div>
+                            </div>
+                          </div>
+                          <div>
+                            <label class="block text-white font-medium">Figma</label>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                              <div class="h-full bg-blue-600 rounded-full progress-bar" data-width="80%"></div>
+                            </div>
+                          </div>
+                          <div>
+                              <label class="block text-white font-medium">Blender</label>
+                              <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-full bg-blue-600 rounded-full progress-bar" data-width="55%"></div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+
+                    <!-- DIVERS Section -->
+                    <div>
+                      <h2 class="text-xl text-white font-bold mb-4">DIVERS</h2>
+                      <div class="space-y-3">
+                        <div>
+                          <label class="block text-white font-medium">Windows</label>
+                          <div class="h-2 bg-gray-200 rounded-full">
+                            <div class="h-full bg-blue-600 rounded-full progress-bar" data-width="85%"></div>
+                          </div>
+                        </div>
+                        <div>
+                          <label class="block text-white font-medium">Linux</label>
+                          <div class="h-2 bg-gray-200 rounded-full">
+                            <div class="h-full bg-blue-600 rounded-full progress-bar" data-width="75%"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="w-1/2 flex flex-col justify-center items-center">
+                    <img class="p-8" src="public/image/imgCV.webp"/>
+                    <a class="flex text-white font-bold text-xl bg-blue-600 px-4 py-2 rounded-full" href="public/image/CV.pdf">Télécharger <img class="w-8 h-8" src="https://img.icons8.com/?size=100&id=83988&format=png&color=ffffff"/></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="myModal" class="fixed inset-0 bg-gray-600 bg-opacity-50 hidden flex justify-center items-center">
+            <div class="bg-white p-6 rounded-lg w-1/3">
+                <div class=" w-full flex justify-end">
+                    <button id="closeModalButton" class="text-black absolute">&#10006;</button>
+                </div>
+            <h2 class="text-xl font-semibold">Contact</h2>
+            <ul class="mt-2">
+                <li class="flex items-center"><img class="h-4 w-4" src="https://img.icons8.com/?size=100&id=53435&format=png&color=000000"/><p class="pl-2">melwinduquenne@gmail.com</p></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="src/js/three.js"></script>
+    <script src="src/js/nav.js"></script>
+</body>
+<footer class="w-full bg-black h-[100px] flex flex-col justify-center items-center">
+    <p class="text-white">© Copyright 2025 - Melwin Duquenne. Tous droits réservés.</p>
+    <ul class="text-white flex">
+        <li><a href="#">Plan du site |</a></li>
+        <li class="pl-1"><a href="#">Mention légale |</a></li>
+        <li class="pl-1"><a href="#">Politique de confidentialité</a></li>
+    </ul>
+</footer>
+
+</html>
